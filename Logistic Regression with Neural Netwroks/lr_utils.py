@@ -1,7 +1,6 @@
 import numpy as np
 import h5py
     
-    
 def load_dataset():
     with h5py.File('./datasets/train_catvnoncat.h5', "r") as train_dataset:
         train_set_x_orig = np.array(train_dataset["train_set_x"][:]) # train set features
