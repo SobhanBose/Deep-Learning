@@ -19,20 +19,6 @@ def plot_decision_boundary(model, X, y):
     plt.ylabel('x2')
     plt.xlabel('x1')
     plt.scatter(X[0, :], X[1, :], c=y, cmap=plt.cm.Spectral)
-    
-
-def sigmoid(x):
-    """
-    Compute the sigmoid of x
-
-    Arguments:
-    x -- A scalar or numpy array of any size.
-
-    Return:
-    s -- sigmoid(x)
-    """
-    s = 1/(1+np.exp(-x))
-    return s
 
 def load_planar_dataset():
     np.random.seed(1)
